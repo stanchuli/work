@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  background: white;
+  font-family: Space Grotesk, sans-serif;
+  cursor: url('images/kursor.svg') 16 16, auto;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  animation: fadeOut 2s ease forwards;
+  animation-delay: 2s; 
+}
+
+.preloader img {
+  width: 600px;
+  height: auto;
+}
+
+
+@keyframes fadeOut {
+  to {
+    opacity: 20;
+    visibility: hidden;
+  }
+}
+
+header {
+  background-color: limegreen;
+  overflow: hidden;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  /* full width */
+  width: 100vw;
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: marqueeAnim 30s linear infinite;
+  white-space: nowrap;
+}
+
+.marquee span {
+  color: white;
+  font-family: 'Neureal', sans-serif;
+  font-size: 14px;
+  padding-right: 2rem;
+}
+
+@keyframes marqueeAnim {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.logo {
+  font-size: 18pt;
+  text-transform: lowercase;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18pt;
+  text-transform: lowercase;
+}
+
+main {
+  position: relative;
+  padding: 10px;
+  padding-bottom: 60px;
+  min-height: 1800px;
+  overflow: hidden;
+}
+
+.cta-buttons {
+  position: absolute;
+  top: 180px;
+  left: 495px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 2;
+}
+
+.cta-buttons {
+  position: absolute;
+  top: 180px;
+  left: 490px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 5;
+}
+
+.social-buttons {
+  position: absolute;
+  top: 1300px;
+  left: 610px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 5;
+}
+
+.cta-buttons a,
+.social-buttons a {
+  text-decoration: underline;
+  color: black;
+  font-family: Space Grotesk, sans-serif;
+  font-size: 12pt;
+  line-height: 1.5;
+  mix-blend-mode: multiply;
+  transition: color 0.3s ease;
+  text-transform: lowercase;
+}
+
+.cta-buttons a:hover,
+.social-buttons a:hover {
+  color: limegreen;
+}
+
+.textbox {
+  position: absolute;
+  width: 220px;
+  height: auto;
+  max-height: 600px;
+  padding: 10px;
+  font-size: 13pt;
+  background: transparent;
+  border: none;
+  box-sizing: border-box;
+  z-index: 1;
+  color: black;
+  line-height: 1.5;
+  pointer-events: auto;
+  transition: z-index 0.3s ease;
+  mix-blend-mode: multiply;
+  text-align: justify;
+}
+
+.textbox:hover {
+  z-index: 10;
+}
+
+.textbox::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 780px;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.textbox:hover::after {
+  opacity: 1;
+}
+
+.box1::after {
+  background-image: url('images/slika1.jpg');
+}
+
+.box2::after {
+  background-image: url('images/slika2.JPG');
+}
+
+.box3::after {
+  background-image: url('images/slika3.jpg');
+}
+
+.box4::after {
+  background-image: url('images/slika4.jpg');
+}
+
+.box5::after {
+  background-image: url('images/slika5.jpg');
+}
+
+.box6::after {
+  background-image: url('images/slika6.jpg');
+}
+
+.box7::after {
+  background-image: url('images/slika7.jpg');
+}
+
+.box8::after {
+  background-image: url('images/slika8.jpg');
+}
+
+.box9::after {
+  background-image: url('images/slika9.JPG');
+}
+
+.box10::after {
+  background-image: url('images/slika10.jpg');
+}
+
+
+.box1 { top: 120px; left: 250px; }
+.box2 { top: 450px; left: 480px; }
+.box3 { top: 750px; left: 330px; }
+.box4 { top: 160px; left: 1120px; }
+.box5 { top: 300px; left: 670px; }
+.box6 { top: 380px; left: 100px; }
+.box7 { top: 40px; left: 850px; }
+.box8 { top: 520px; left: 1220px; }
+.box9 { top: 870px; left: 1040px; }
+.box10 { top: 1220px; left: 240px; }
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 30px;
+  background: white;
+  font-size: 10pt;
+  font-family: Neureal, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.textbox {
+  cursor: pointer;
+}

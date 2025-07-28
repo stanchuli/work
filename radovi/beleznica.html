@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../style.css" />
+  <title>notebook</title>
+  <style>
+
+    main {
+      display: flex;
+      margin: 0;
+      padding: 80px 100px 170px 100px;
+      overflow: hidden;
+      box-sizing: border-box;
+      font-family: Space Grotesk, sans-serif;
+      color: black;
+      min-height: 1400px;      
+      cursor: url('images/kursor.svg') 16 16, auto;
+
+    }
+
+    header {
+      background-color: limegreen;
+      overflow: hidden;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      width: 100vw;
+    }
+
+    .marquee {
+      display: flex;
+      width: max-content;
+      animation: marqueeAnim 30s linear infinite;
+      white-space: nowrap;
+    }
+
+    .marquee span {
+      color: white;
+      font-family: 'Neureal', sans-serif;
+      font-size: 14px;
+      padding-right: 2rem;
+    }
+
+    @keyframes marqueeAnim {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+.intro {
+  width: 100%;
+  padding: 50px 0px 0px 80px;
+  box-sizing: border-box;
+  font-size: 45pt;
+  line-height: 1.2;
+  text-align: left;
+  font-family: Space Grotesk, sans-serif;
+  background: white;
+  color: black;
+}
+
+.intro p {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+    .notebook-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      max-width: 1400px; 
+    }
+
+.blur-box {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  text-align: justify;
+  font-size: 9pt;
+  color: transparent;
+  filter: blur(5px);
+  transition: filter 0.4s ease, color 0.4s ease;
+  cursor: pointer;
+  min-height: 180px;
+}
+
+.blur-box:hover {
+  filter: blur(0px);
+  color: black;
+}
+
+  footer {
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      padding: 10px 30px;
+      background: white;
+      font-size: 10pt;
+      font-family: Neureal, sans-serif;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+    }
+.nazad-button {
+  position: absolute;
+  top: 1590px;  
+  left: 1020px; 
+  text-decoration: underline;
+  color: black;
+  font-family: Space Grotesk, sans-serif;
+  font-size: 12pt;
+  line-height: 1.5;
+  mix-blend-mode: multiply;
+  transition: color 0.3s ease;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+.nazad-button:hover {
+  color: limegreen;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+  <div class="marquee">
+    <span>stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp;stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp;stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp; stanchuli &nbsp;</span>
+  </div>
+  </header>
+
+  <section class="intro">
+    <p>
+    the notebook is an ever-growing collection of recorded thoughts - a meeting of late blue hours and the urge to escape the spoken word.
+
+    </p>
+  </section>
+
+  <main>
+    <div class="notebook-grid">
+ <div class="blur-box">
+<p>and jealousy, which feeds the sadness</p>
+<p>by the spoonful</p>
+<p>just enough to taste the sweet flavor</p>
+<p>false happiness like popping powder in a packet</p>
+<p>suddenly chases away the bitterness</p>
+<p>but truth and inevitability remain in the throat</p>
+<p>in the end, beneath the indifference</p>
+<p>we are betrayed by blue tongues</p>
+</div>
+
+<div class="blur-box">
+<p>mind rushes in a navy-blue watch</p>
+<p>swaying like a pendulum across dreambook pages</p>
+<p>suddenly we’re both to blame, me</p>
+<p>and your inappropriate request that i take flight</p>
+</div>
+
+<div>
+</div>
+
+<div class="blur-box">
+<p>rewinding happens periodically  
+it’s tied to family homes  
+rooms for little girls and the attic terrace  
+a view of neighboring yards, clouds, and the unspoken  
+escaping actually happens in reverse  
+back into old streets and habits  
+into the warmth of stillness  
+escaping into stillness</p>
+
+<p>and memory is periodic  
+a flash like a drop of bitterness in seasonal fruit  
+mostly sweet, bruised from ripeness  
+ripeness is actually soft and sticky  
+soft from the knowledge that defenses are useless  
+patient in dreams of change  
+skin that ages and stretches, speckled with stains  
+ripeness speckled with stains</p>
+
+<p>and melancholy is periodic  
+you’d find it in a warm july afternoon  
+in a breeze that brings it but leads nowhere  
+it stays in the eye behind tinted glasses  
+to stay is actually a new departure  
+a familiar path in a new time  
+and time is always new  
+new and periodic</p>
+</div>
+
+<div class="blur-box">
+<p>sometimes it’s not enough  
+to do something for yourself  
+because doing it for yourself  
+is still doing it for others</p>
+
+<p>then it is comforting to know  
+that the attempt failed</p>
+
+<p>surges of solitude are necessary,  
+hope is not  
+arranged by chance encounters</p>
+
+<p>objectively open to novelty  
+from the shadows behind damp pages  
+life is sometimes cinematic  
+just as films can be lifelike.  
+or maybe they aren’t separate at all</p>
+
+<p>i function quite well  
+in someone else’s crowd  
+from the sidelines of my empty corner  
+really quite well  
+crowds in my eyes are peace in my head</p>
+</div>
+
+<div>
+</div>
+
+<div class="blur-box">
+<p>i remember what never happened  
+because it didn’t exist, i tried not to forget  
+i feel the consequences of my non-actions  
+not as a negation that absolves guilt  
+your honor, she’s innocent  
+and did nothing about it</p>
+
+<p>invisible consequences hurt  
+and pain can’t be seen  
+ugly feelings are warm  
+still nearby, they breathe and blur my vision  
+and i no longer write poetry  
+i guess i have no one left to address</p>
+
+<p>poetry seeks beauty  
+manners and sugary etiquette  
+how improper it would be to surrender  
+to write letters full of hatred  
+emotional discharge doesn’t suit paper  
+those are specialties of others  
+porcelain, for instance, takes the lead</p>
+
+<p>the one that doesn’t break  
+yet so easily knows and wants to  
+under a slightly clumsier hand  
+it sulks, leaps into the abyss  
+pulls along as it cuts  
+white edges embrace red fingers  
+selfishly but effectively</p>
+
+<p>porcelain is no longer angry  
+and no longer exists, but that’s easy to forget  
+spoken words don’t cut or ache  
+they stick and slip under the skin  
+remembered like the first injustice  
+and irretrievable cuticles</p>
+</div>
+
+<div class="blur-box">
+<p>i was a good playmate</p>
+<p>like a plastic doll with spinning eyes</p>
+<p>who blinks away her unfairly scribbled dress</p>
+<p>when needed, even a boyish army comrade</p>
+<p>hearts in lead shells</p>
+<p>resist the fires of warm tears</p>
+<p>that choke from the throat and assault locked lungs</p>
+
+<p>i was the answer many times</p>
+<p>but i never liked asking questions</p>
+</div>
+    </div>
+  </main>
+
+<a href="../index.html" class="cta-buttons nazad-button">back</a>
+
+  <footer>
+    <div class="footer-left">andjelija.stanculovic@gmail.com</div>
+    <div class="footer-center">2025</div>
+    <div class="footer-right">@stanchuli</div>
+  </footer>
+
+</body>
+</html>
