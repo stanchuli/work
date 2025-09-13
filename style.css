@@ -251,4 +251,54 @@ a {
 
 .textbox {
   cursor: pointer;
+
+  @media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  main {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .textbox {
+    width: 80%;
+    max-width: 320px;
+    font-size: 12pt;
+  }
+
+  /* Novi raspored za mobile */
+  .box1 { top: 60px; left: 20px; }
+  .box2 { top: 260px; left: 30px; }
+  .box3 { top: 480px; left: 40px; }
+  .box4 { top: 700px; left: 20px; }
+  .box5 { top: 920px; left: 35px; }
+  .box6 { top: 1140px; left: 25px; }
+  .box7 { top: 1360px; left: 40px; }
+  .box8 { top: 1580px; left: 20px; }
+  .box9 { top: 1800px; left: 30px; }
+  .box10 { top: 2020px; left: 40px; }
+
+  .cta-buttons {
+    top: 20px;
+    left: 20px;
+    position: absolute;
+  }
+
+  .social-buttons {
+    top: 2300px;
+    left: 20px;
+    position: absolute;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
 }
